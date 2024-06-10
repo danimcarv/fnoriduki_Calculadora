@@ -17,21 +17,21 @@ namespace Calculadora
             }
             return operacao;
         }
-        public int soma(Operacoes operacao)
+        public double soma(Operacoes operacao)  // Alterado tipo - de int para double
         {
             return operacao.valorA + operacao.valorB;
         }
-        public int subtracao(Operacoes operacao)
+        public double subtracao(Operacoes operacao)  // Alterado tipo - de int para double
         {
             return operacao.valorA - operacao.valorB;
         }
-        public int multiplicacao(Operacoes operacao)
+        public double multiplicacao(Operacoes operacao) // Alterado tipo - de int para double
         {
             return operacao.valorA * operacao.valorB;
         }
 
-        public int divisao(Operacoes operacao) // Implementado o cálculo de divisão
-        {
+        public double divisao(Operacoes operacao) // Implementado o cálculo de divisão
+        {  // Alterado tipo - de int para double
             return operacao.valorA / operacao.valorB;
         }
        

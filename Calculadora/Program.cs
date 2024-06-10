@@ -23,6 +23,13 @@ namespace Calculadora
                 Operacoes operacao = filaOperacoes.Dequeue(); // Alterado método. O método Peak retorna o item mas não o remove, o que estava causando o processamento infinito
                 calculadora.calcular(operacao);
                 Console.WriteLine("{0} {1} {2} = {3}", operacao.valorA,operacao.operador,operacao.valorB, operacao.resultado);
+                if (filaOperacoes.Count != 0) Console.WriteLine("Próximas operações:"); // Implementação da lista de operações
+                else Console.WriteLine("Fim das operações"); // Implementação da lista de operações
+                foreach (Operacoes novaoperacao in filaOperacoes) // Implementação da lista de operações
+                { // Implementação da lista de operações
+                    Console.WriteLine("{0} {1} {2}", novaoperacao.valorA,novaoperacao.operador,novaoperacao.valorB); // Implementação da lista de operações
+                } // Implementação da lista de operações
+                Console.WriteLine(); // Implementação da lista de operações
             }
 
           
