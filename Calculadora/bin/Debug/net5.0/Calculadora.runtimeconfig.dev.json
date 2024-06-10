@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/danim/.dotnet/store/|arch|/|tfm|",
+      "/Users/danim/.nuget/packages"
+    ]
+  }
+}

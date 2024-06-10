@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 namespace Calculadora
 {
     public class Calculadora
@@ -11,6 +12,7 @@ namespace Calculadora
                 case '+': operacao.resultado= soma(operacao);break;
                 case '-': operacao.resultado = subtracao(operacao);break;
                 case '*': operacao.resultado = multiplicacao(operacao);break;
+                case '/': operacao.resultado = divisao(operacao);break;
                 default: operacao.resultado = 0; break;
             }
             return operacao;
@@ -26,6 +28,11 @@ namespace Calculadora
         public int multiplicacao(Operacoes operacao)
         {
             return operacao.valorA * operacao.valorB;
+        }
+
+        public int divisao(Operacoes operacao) // Implementado o cálculo de divisão
+        {
+            return operacao.valorA / operacao.valorB;
         }
        
     }
